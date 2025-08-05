@@ -35,27 +35,32 @@ li {
 
 .technologies {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
+    margin-bottom: 10px;
 }
 
 .technologies img {
     max-width: 50px;
     max-height: 50px;
+    min-width: 50px;
     margin-right: 10px;
+    flex-shrink: 0;
 }
 
 .technology-name {
     font-weight: bold;
-    margin-right: 15px;
     font-size: 16px;
+    min-width: 100px;
+    text-align: left;
 }
 
 .mastery-level {
     color: #777;
     font-size: 14px;
     margin: 0;
+    margin-left: 15px;
     font-style: italic;
 }
 
@@ -135,7 +140,7 @@ footer {
     align-items: center;
     padding: 5px 10px;
     transition: opacity 0.3s ease;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 .footer-nav .nav-item a:hover {
